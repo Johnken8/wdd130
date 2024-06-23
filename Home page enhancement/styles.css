@@ -1,0 +1,67 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+/* Main Section Styles */
+main {
+    max-width: 840px;
+    margin: 2rem auto;
+    padding: 1rem;
+}
+
+main section {
+    text-align: center;
+}
+
+main img {
+    width: 150px;
+    height: auto;
+    display: block;
+    margin: 1rem auto;
+}
+
+/* Aside Section Styles */
+aside {
+    width: 20rem;
+    margin: 1rem auto;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    padding: 1rem;
+    background-color: #eee;
+    color: #333;
+    text-align: center;
+}
+
+aside img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+/* Paragraph Styles */
+p {
+    padding: 0;
+}
+
+/* Footer Styles */
+footer {
+    margin-top: 15px;
+    border-top: 1px solid #000;
+    text-align: center;
+    padding: 1rem 0;
+}
