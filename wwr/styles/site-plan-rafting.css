@@ -1,21 +1,35 @@
+:root {
+  --primary-color: #396e94;
+  --secondary-color: #e7c24f;
+  --accent1-color: #a43312;
+  --accent2-color: #ffffff;
+
+  --heading-font: 'Arial', serif;
+  --paragraph-font: 'Georgia', serif;
+
+  --nav-background-color: #396e94;
+  --nav-link-color: #ffffff;
+  --nav-hover-link-color: #e7c24f;
+  --nav-hover-background-color: #a43312;
+}
+
 body {
-  font-family: Arial, sans-serif;
-  line-height: 1.6;
-  margin: 0;
+  font-family: var(--paragraph-font);
+  margin: 0 auto;
   padding: 0;
   background-color: #f0f0f0;
+  max-width: 960px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--heading-font);
+  color: var(--primary-color);
 }
 
 header {
-  background-color: #396e94;
-  color: #ffffff;
+  background-color: var(--secondary-color);
   text-align: center;
   padding: 20px;
-}
-
-header h1 {
-  margin: 0;
-  font-size: 2.5rem;
 }
 
 header div {
@@ -23,62 +37,34 @@ header div {
 }
 
 main {
-  max-width: 800px;
-  margin: 20px auto;
   padding: 20px;
-  background-color: #ffffff;
-  border: 1px solid #ccc;
-  border-radius: 5px;
 }
 
-section {
-  margin-bottom: 40px;
-}
-
-h2 {
-  color: #396e94;
-  border-bottom: 2px solid #396e94;
-  padding-bottom: 5px;
-  margin-bottom: 15px;
-}
-
-h3 {
-  color: #396e94;
-  margin-top: 20px;
-}
-
-ul {
-  list-style-type: disc;
-  padding-left: 20px;
+nav {
+  background-color: var(--nav-background-color);
+  font-size: 1.2rem;
+  display: flex;
 }
 
 nav a {
+  display: block;
+  color: var(--nav-link-color);
   text-decoration: none;
-  color: #396e94;
-  margin-right: 10px;
+  padding: 1rem;
+}
+
+nav a:link, nav a:visited {
+  color: var(--nav-link-color);
 }
 
 nav a:hover {
-  text-decoration: underline;
-}
-
-.image-gallery {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 20px;
-}
-
-.image-gallery img {
-  border-radius: 5px;
-  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+  color: var(--nav-hover-link-color);
+  background-color: var(--nav-hover-background-color);
 }
 
 footer {
   text-align: center;
   padding: 10px;
-  background-color: #396e94;
-  color: #ffffff;
-  position: fixed;
-  bottom: 0;
-  width: 100%;
+  background-color: var(--primary-color);
+  color: var(--accent2-color);
 }

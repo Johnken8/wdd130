@@ -1,0 +1,44 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+/* Main Section Styles */
+main {
+    max-width: 840px;
+    margin: 2rem auto;
+    padding: 1rem;
+}
+
+.box {
+    padding: 20px;
+    border: 5px solid #333;
+    margin: 20px;
+    background-color: #eee;
+}
+
+.box h2 {
+    margin-top: 0;
+}
+
+footer {
+    margin-top: 15px;
+    border-top: 1px solid #000;
+    text-align: center;
+    padding: 1rem 0;
+}
