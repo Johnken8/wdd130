@@ -65,24 +65,3 @@ footer {
   text-align: center;
   padding: 1rem 0;
 }
-
-/* Holy Grail Layout */
-.container {
-  display: flex;
-  flex-wrap: wrap;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 1rem;
-}
-
-.sidebar {
-  flex: 1 1 200px;
-  background: #f4f4f4;
-  padding: 1rem;
-}
-
-.content {
-  flex: 2 1 600px;
-  background: #e2e2e2;
-  padding: 1rem;
-}
