@@ -15,10 +15,9 @@ header {
     background-color: #333;
     color: #fff;
     padding: 1rem;
-    text-align: center;
 }
 
-header nav a {
+nav a {
     color: #fff;
     margin: 0 1rem;
     text-decoration: none;
@@ -49,7 +48,6 @@ aside {
     padding: 1rem;
     background-color: #eee;
     color: #333;
-    text-align: center;
     position: relative; /* Added relative positioning */
 }
 
@@ -62,8 +60,8 @@ aside img {
 
 aside h2 {
     position: absolute;
-    top: 20px; /* Adjust positioning as needed */
-    left: 20px; /* Adjust positioning as needed */
+    top: 50px; /* Adjust positioning as needed */
+    left: 75px; /* Adjust positioning as needed */
     color: #333; /* Ensure text is readable */
 }
 
@@ -87,22 +85,16 @@ footer {
 }
 
 /* Additional styles */
-ul.box {
+ul {
     list-style-type: none;
     padding: 0;
     margin: 0;
 }
 
-ul.box li {
+ul li {
     margin-bottom: 0.5rem;
 }
 
-/* Nav links */
-header nav a {
-    color: #fff;
-    margin: 0 1rem;
-    text-decoration: none;
-}
 
 /* Date of last modification */
 /* Updated: June 26, 2024 */
