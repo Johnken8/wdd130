@@ -15,12 +15,25 @@ header {
     background-color: #333;
     color: #fff;
     padding: 1rem;
+    max-width: 840px; /* Added max-width */
+    margin: 0 auto; /* Centered header content */
+}
+
+nav {
+    display: flex; /* Ensured flex display for navigation links */
+    justify-content: center; /* Centered navigation links */
+    background-color: #333;
+    padding: 1rem;
 }
 
 nav a {
     color: #fff;
     margin: 0 1rem;
     text-decoration: none;
+    display: block; /* Added display block for navigation links */
+    padding: 0.5rem; /* Added padding for navigation links */
+    font-size: 1.2rem; /* Font size for navigation links */
+    font-weight: 700; /* Font weight for navigation links */
 }
 
 main {
@@ -34,7 +47,7 @@ main {
 main img {
     width: 150px;
     height: auto;
-    float: right; /* Float profile image to the right */
+    float: right;
 }
 
 p {
@@ -48,25 +61,24 @@ aside {
     padding: 1rem;
     background-color: #eee;
     color: #333;
-    position: relative; /* Added relative positioning */
+    position: relative;
 }
 
 aside img {
-    width: 200px;
+    width: 100%; /* Adjusted image width */
     height: auto;
     display: block;
-    margin: 1rem auto;
+    margin-bottom: 1rem; /* Added margin */
 }
 
 aside h2 {
-    position: absolute;
-    top: 50px; /* Adjust positioning as needed */
-    left: 75px; /* Adjust positioning as needed */
-    color: #333; /* Ensure text is readable */
+    position: static; /* Adjusted positioning */
+    color: #333;
+    margin-top: 0; /* Added margin reset */
 }
 
 footer {
-    margin-top: 15px;
+    margin-top: 2rem; /* Adjusted margin */
     border-top: 1px solid #000;
     text-align: center;
     padding: 1rem;
@@ -80,8 +92,7 @@ footer {
     padding: 1rem;
     background-color: #ddd;
     color: #000;
-    border: 1px solid rgba(0,0,0,.1);
-    clear: both; /* Clear floats */
+    border: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 /* Additional styles */
@@ -95,6 +106,5 @@ ul li {
     margin-bottom: 0.5rem;
 }
 
-
 /* Date of last modification */
-/* Updated: June 26, 2024 */
+/* Updated: July 10, 2024 */
