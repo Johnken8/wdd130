@@ -256,3 +256,7 @@ footer nav a {
     color: #fff;
     text-decoration: none;
 }
+
+.employee-image {
+    width: 100px;
+}
