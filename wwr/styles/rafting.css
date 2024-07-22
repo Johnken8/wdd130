@@ -99,6 +99,14 @@ footer nav img {
     color: #fff;
 
 }
+.sociallinks a {
+    color: unset;
+}
+
+nav a:hover {
+    color: unset;
+    background-color: unset;
+}
 
 
 
