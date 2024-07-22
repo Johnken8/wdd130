@@ -295,7 +295,7 @@ article {
 }
 
 .contact-form button {
-    background-color: #4CAF50;
+    background-color: #0a660d;
     color: #fff;
     padding: 12px 20px;
     border: none;
@@ -305,7 +305,9 @@ article {
 }
 
 .contact-form button:hover {
-    background-color: #45a049;
+    background-color: #fff;
+    color: #0a660d;
+    border: #000 solid 3px;
 }
 
 .map {
