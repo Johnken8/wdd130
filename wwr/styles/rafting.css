@@ -165,7 +165,7 @@ article {
 
 .cta-link {
     display: inline-block;
-    background-color: var(--accent-color);
+    background-color: var(--accent1-color);
     color: #fff;
     padding: 1rem 2rem;
     border-radius: 5px;
