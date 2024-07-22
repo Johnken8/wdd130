@@ -1,20 +1,59 @@
-/* General Styles */
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    line-height: 1.6;
-    background-color: var(--secondary-color);
-    color: var(--text-color);
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Open+Sans:wght@400;700&display=swap');
+
+:root {
+    --primary-color: #333;
+    --secondary-color: #f4f4f4;
+    --accent1-color: #ff6e61;
+    --accent2-color: #333;
+
+    --heading-font: 'Roboto', sans-serif;
+    --paragraph-font: 'Open Sans', sans-serif;
+
+    --nav-link-color: #fff;
+    --nav-background-color: #396e94;
+    --nav-hover-link-color: #396e94;
+    --nav-hover-background-color: #fff;
 }
 
-header {
-    background-color: var(--nav-background-color);
-    color: var(--nav-link-color);
-    padding: 1rem;
-    text-align: center;
+/* HTML TAG on all pages */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--paragraph-font);
+    background-color: var(--secondary-color);
+    margin: 0;
+    padding: 0;
+    color: var(--accent2-color);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--heading-font);
+}
+
+a {
+    text-decoration: none;
+}
+
+header, main, footer {
     max-width: 1200px;
     margin: 0 auto;
+}
+
+main {
+    padding: 1rem;
+    background-color: #fff;
+    border: 1px solid var(--primary-color);
+}
+
+
+/* Header & Nav area */
+header {
+    display: grid;
+    grid-template-columns: 200px auto;
+    align-items: center;
+    background-color: var(--nav-background-color);
 }
 
 header img {
@@ -30,32 +69,40 @@ nav {
 nav a {
     color: var(--nav-link-color);
     margin-left: 1rem;
-    text-decoration: none;
+    padding: 1em;
 }
 
 nav a:hover {
     color: var(--nav-hover-link-color);
     background-color: var(--nav-hover-background-color);
-    padding: 0.5rem;
     border-radius: 5px;
 }
 
-main {
-    padding: 1rem;
-    background-color: white;
-    border: 1px solid var(--primary-color);
-}
-
+/* footer */
 footer {
-    background-color: var(--primary-color);
-    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     text-align: center;
+    background-color: var(--primary-color);
+    color: #fff;
     padding: 1rem;
-    max-width: 1200px;
-    margin: 0 auto;
+    margin-top: 2rem;
 }
 
-/* Hero Section */
+footer nav img {
+    width: 60px;
+    margin: 0 10px;
+}
+
+.wireframe-link {
+    color: #fff;
+
+}
+
+
+
+/* Hero area for all pages */
 .hero {
     position: relative;
 }
@@ -71,97 +118,73 @@ footer {
     top: 50px;
     left: 0;
     right: 0;
+    text-align: center;
     background: rgba(0, 0, 0, 0.5);
-    color: white;
-    padding: 1rem;
-    border-radius: 5px;
-    text-align: center;
-}
-
-/* Call to Action */
-.call-to-action {
-    text-align: center;
-    margin: 2rem 0;
-}
-
-.cta-button, .cta-contact {
-    background-color: var(--accent-color);
-    color: white;
-    padding: 1rem;
-    text-decoration: none;
-    border-radius: 5px;
-    text-align: center;
-    display: inline-block;
-}
-
-.cta-button:hover, .cta-contact:hover {
-    background-color: hsl(5, 100%, 60%);
-}
-
-/* Newsletter Section */
-.newsletter {
-    text-align: center;
-    margin: 2rem 0;
-}
-
-.newsletter form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.newsletter label {
-    margin: 0.5rem 0;
-}
-
-.newsletter input {
+    color: #fff;
     padding: 0.5rem;
-    margin: 0.5rem 0;
-    border-radius: 5px;
-    border: 1px solid #ccc;
 }
 
-.newsletter button {
+article {
+    position: absolute;
+    top: 150px;
+    left: 50px;
+    right: 50px;
+    background: rgba(255, 255, 255, 0.8);
+    padding: 1rem;
+    border-radius: 5px;
+}
+
+.hero article img {
+    float: right;
+    margin-left: 1rem;
+    width: 200px;
+}
+
+
+/* CTA buttons on all pages */
+.cta-contact {
+    display: block;
+    width: fit-content;
+    padding: 1rem;
+    margin: 2rem auto;
     background-color: var(--accent-color);
-    color: white;
-    padding: 0.5rem 1rem;
-    border: none;
+    color: #fff;
+    text-align: center;
+
     border-radius: 5px;
-    cursor: pointer;
 }
 
-.newsletter button:hover {
+.cta-contact:hover {
     background-color: hsl(5, 100%, 60%);
 }
 
-/* Company Info Section */
-.company-info {
-    padding: 2rem;
-    background-color: var(--secondary-color);
-}
-
-/* Grid Layout */
-.grid-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    gap: 2rem;
-}
-
-.grid-item {
-    background-color: var(--secondary-color);
-    padding: 1rem;
-    border: 1px solid var(--primary-color);
-    border-radius: 5px;
+.cta {
     text-align: center;
+    margin: 2rem 0;
 }
 
-.grid-item img {
-    width: 100%;
-    height: auto;
+.cta-link {
+    display: inline-block;
+    background-color: var(--accent-color);
+    color: #fff;
+    padding: 1rem 2rem;
     border-radius: 5px;
+
+    font-size: 1.2rem;
 }
 
-/* Adventure Section */
+.cta-link:hover {
+    background-color: hsl(5, 100%, 60%);
+}
+
+
+
+/* About Us page */
+.history {
+    margin-top: 2rem;
+    clear: both;
+}
+
 .adventure {
     display: flex;
     flex-wrap: wrap;
@@ -169,11 +192,8 @@ footer {
 }
 
 .adventure figure {
-    margin: 0;
+    margin: 1rem;
     text-align: center;
-    display: inline-flex;
-    flex-direction: column;
-    max-width: 200px;
 }
 
 .adventure img {
@@ -192,15 +212,7 @@ footer {
     text-align: center;
 }
 
-/* Footer Link to Wireframe */
-.wireframe-link {
-    color: #fff;
-    text-decoration: none;
-    display: inline-block;
-    margin-top: 1rem;
-}
-
-/* Contact Page Specific Styles */
+/* Contact Us Page */
 .contact-info {
     margin-bottom: 30px;
 }
@@ -211,8 +223,7 @@ footer {
 
 .map {
     margin-bottom: 20px;
-    height: 300px; /* Adjust as needed */
-    border: none;
+    height: 300px;
 }
 
 .employee-profiles {
@@ -249,7 +260,7 @@ footer {
     background-color: #fff;
     border: 1px solid #ccc;
     border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .contact-form label,
@@ -259,9 +270,7 @@ footer {
     display: block;
 }
 
-.contact-form input[type="text"],
-.contact-form input[type="email"],
-.contact-form textarea {
+.contact-form input[type="text"], .contact-form input[type="email"], .contact-form textarea {
     width: 100%;
     padding: 10px;
     margin-bottom: 10px;
@@ -287,7 +296,7 @@ footer {
 
 .contact-form button {
     background-color: #4CAF50;
-    color: white;
+    color: #fff;
     padding: 12px 20px;
     border: none;
     border-radius: 5px;
@@ -299,7 +308,18 @@ footer {
     background-color: #45a049;
 }
 
-/* Trips/Adventures Page Styles */
+.map {
+    border: none;
+}
+
+
+
+.employee-image {
+    width: 100px;
+}
+
+
+/* Trips Page */
 .trips {
     display: flex;
     flex-wrap: wrap;
@@ -350,4 +370,112 @@ footer {
 
 .trips-table tr:nth-child(even) {
     background-color: var(--secondary-color);
+}
+
+
+
+
+/* index page */
+
+.newsletter {
+    text-align: center;
+    margin: 2rem 0;
+}
+
+.newsletter form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.newsletter label {
+    margin: 0.5rem 0;
+}
+
+.newsletter input {
+    padding: 0.5rem;
+    margin: 0.5rem 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.newsletter button {
+    background-color: var(--accent-color);
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.newsletter button:hover {
+    background-color: hsl(5, 100%, 60%);
+}
+
+
+.offerings {
+    margin: 2rem 0;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.grid-item {
+    background-color: var(--secondary-color);
+    padding: 1rem;
+    border: 1px solid var(--primary-color);
+    border-radius: 5px;
+    text-align: center;
+}
+
+.grid-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.company-info {
+    padding: 2rem;
+    background-color: var(--secondary-color);
+}
+
+/* Contact Us page */
+.contact-info {
+    margin-bottom: 30px;
+}
+
+.contact-info address {
+    margin-bottom: 20px;
+}
+
+.map {
+    margin-bottom: 20px;
+    height: 300px;
+    border: none;
+}
+
+.employee-profiles {
+    margin-bottom: 30px;
+}
+
+.employee-profiles h2 {
+    text-align: center;
+}
+
+.employee-profiles figure {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.employee-profiles img {
+    max-width: 100%;
+    border-radius: 50%;
+}
+
+.employee-profiles figcaption {
+    margin-top: 10px;
+    font-style: italic;
 }
