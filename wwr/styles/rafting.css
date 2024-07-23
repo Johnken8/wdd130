@@ -10,8 +10,8 @@
     --paragraph-font: 'Open Sans', sans-serif;
 
     --nav-link-color: #fff;
-    --nav-background-color: #396e94;
-    --nav-hover-link-color: #396e94;
+    --nav-background-color: #051378;
+    --nav-hover-link-color: #051378;
     --nav-hover-background-color: #fff;
 }
 
@@ -99,11 +99,12 @@ footer nav img {
     color: #fff;
 
 }
+
 .sociallinks a {
     color: unset;
 }
 
-nav a:hover {
+.sociallinks a:hover {
     color: unset;
     background-color: unset;
 }
@@ -202,6 +203,7 @@ article {
 .adventure figure {
     margin: 1rem;
     text-align: center;
+    max-width: 200px;
 }
 
 .adventure img {
@@ -450,42 +452,4 @@ article {
 .company-info {
     padding: 2rem;
     background-color: var(--secondary-color);
-}
-
-/* Contact Us page */
-.contact-info {
-    margin-bottom: 30px;
-}
-
-.contact-info address {
-    margin-bottom: 20px;
-}
-
-.map {
-    margin-bottom: 20px;
-    height: 300px;
-    border: none;
-}
-
-.employee-profiles {
-    margin-bottom: 30px;
-}
-
-.employee-profiles h2 {
-    text-align: center;
-}
-
-.employee-profiles figure {
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-.employee-profiles img {
-    max-width: 100%;
-    border-radius: 50%;
-}
-
-.employee-profiles figcaption {
-    margin-top: 10px;
-    font-style: italic;
 }
